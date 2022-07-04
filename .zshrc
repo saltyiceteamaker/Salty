@@ -98,5 +98,5 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias zsh="sudo vim ~/.zshrc"
-alias fullupdate="sudo apt autoremove; sudo apt update; sudo apt full-upgrade"
-alias lh="ls -a"
+alias ohmyzsh="sudo vim ~/.oh-my-zsh"
+alias i3="sudo vim ~/.config/i3/config"
