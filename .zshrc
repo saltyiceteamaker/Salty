@@ -100,3 +100,4 @@ source $ZSH/oh-my-zsh.sh
 alias zsh="sudo vim ~/.zshrc"
 alias ohmyzsh="sudo vim ~/.oh-my-zsh"
 alias i3="sudo vim ~/.config/i3/config"
+alias top="gtop"
