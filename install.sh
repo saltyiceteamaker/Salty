@@ -1,11 +1,10 @@
-!/bin/bash
+#!/bin/bash
 
-sudo pacman -S -q firefox vim discord konsole zsh yay
+sudo pacman -S --quiet zsh firefox vim discord konsole
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --quiet
 
 chsh /bin/zsh
 
-mv ~/Salty/.zshrc ~
-mv ~/Salty/salty.zsh-theme ~/.oh-my-zsh/themes
-[-d "~/.config/i3" ] && mv config ~/.config/i3 || echo "directory not found... skipping.
+sudo cp /home/$USER/Salty/.zshrc /home/$USER
+sudo cp /home/$USER/Salty/salty.zsh-theme /home/$USER/.oh-my-zsh/themes
