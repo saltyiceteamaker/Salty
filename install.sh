@@ -11,4 +11,6 @@ chsh /bin/zsh
 sudo cp /home/$USER/Salty/.zshrc /home/$USER
 sudo cp /home/$USER/Salty/salty.zsh-theme /home/$USER/.oh-my-zsh/themes
 
-lookandfeeltool -a org.kde.breezedark.desktop
+tar xf Sweet.tar.xz -C /usr/share/themes/
+
+lookandfeeltool -a Sweet
