@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 sudo pacman -S -q zsh firefox vim discord konsole rpm htop neofetch
@@ -11,6 +12,4 @@ chsh /bin/zsh
 sudo cp /home/$USER/Salty/.zshrc /home/$USER
 sudo cp /home/$USER/Salty/salty.zsh-theme /home/$USER/.oh-my-zsh/themes
 
-tar xf Sweet.tar.xz -C /usr/share/themes/
-
-lookandfeeltool -a Sweet
+lookandfeeltool -a org.kde.breezedark.desktop
