@@ -6,6 +6,7 @@ cd ~
 #yay------------------------------------------------------
 sudo pacman -S --needed git base-devel
 sudo git clone https://aur.archlinux.org/yay.git
+sudo chown -R salty:salty ./yay
 cd yay
 makepkg -si
 cd ~
