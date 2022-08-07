@@ -12,9 +12,7 @@ makepkg -si
 cd ~
 #yay------------------------------------------------------
 
-sudo pacman -S -q zsh firefox vim discord konsole rpm htop neofetch
-
-sudo rpm -i gtop
+sudo pacman -S -q zsh firefox vim discord konsole htop neofetch
 
 yay -S sweet-kde
 
