@@ -12,7 +12,7 @@ makepkg -si
 cd ~
 #yay------------------------------------------------------
 
-sudo pacman -S -q zsh firefox vim discord konsole htop neofetch
+sudo pacman -S -q zsh firefox vim discord konsole htop neofetch lolcat
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
