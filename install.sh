@@ -11,7 +11,7 @@ makepkg -si
 cd ~
 #yay------------------------------------------------------
 
-sudo pacman -S -q zsh firefox vim discord htop neofetch lolcat steam flatpak yakuake
+sudo pacman -S -q zsh firefox vim discord htop neofetch lolcat steam flatpak yakuake vlc
 
 yay -S vscodium-bin
 
