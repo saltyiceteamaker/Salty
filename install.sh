@@ -13,12 +13,7 @@ cd ~
 
 sudo pacman -S -q zsh firefox vim discord htop neofetch lolcat steam flatpak yakuake vlc
 
-yay -Syu vscodium-bin aur/eruption
- 
-systemctl --user enable --now eruption-fx-proxy.service
-systemctl --user enable --now eruption-audio-proxy.service
-systemctl --user enable --now eruption-process-monitor.service
-sudo systemctl enable --now eruption.service
+yay -Syu vscodium-bin
  
 sudo flatpak install spotify
 
