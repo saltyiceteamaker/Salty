@@ -14,13 +14,15 @@ cd ~
 
 sudo pacman -S -q zsh firefox vim discord htop neofetch lolcat steam flatpak yakuake vlc
 
+sudo pacman -R -q kate
+
 yay -Syu vscodium-bin
  
 sudo flatpak install spotify
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
-chsh /usr/bin/zsh
+sudo chsh /usr/bin/zsh
 
 sudo cp /home/$USER/Salty/.zshrc /home/$USER
 sudo cp /home/$USER/Salty/salty.zsh-theme /home/$USER/.oh-my-zsh/themes
