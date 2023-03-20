@@ -98,6 +98,4 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias zsh="sudo vim ~/.zshrc"
-alias i3="sudo vim ~/.config/i3/config"
-alias top="gtop"
-neofetch
+neofetch | lolcat
