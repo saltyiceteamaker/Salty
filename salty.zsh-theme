@@ -1,2 +1,2 @@
 NEWLINE=$'\n'
-PROMPT="%B%F{red}%M%f%b%B|%b%B%F{208}%d%f%b%B|%b%B%F{33}[%f%b%B%F{33}%*%f%b%B%F{33}]%f%b${NEWLINE}%B>%b "
+PROMPT="%B%F{49}%m%f%b%B%F{141}%n%f%b%B%F{197}%*%f%b${NEWLINE}%B%F{197}>%f%b"
