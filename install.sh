@@ -12,7 +12,7 @@ makepkg -si
 cd ~
 #yay------------------------------------------------------
 
-sudo pacman -S -q zsh firefox vim discord htop neofetch lolcat steam flatpak yakuake vlc
+sudo pacman -S -q zsh firefox vim discord htop neofetch lolcat steam flatpak yakuake vlc lsd
 
 sudo pacman -R -q kate
 
