@@ -97,5 +97,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+alias ls="lsd"
 alias zsh="sudo vim ~/.zshrc"
 neofetch | lolcat
+figlet I use Arch btw. | lolcat
