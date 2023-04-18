@@ -12,11 +12,9 @@ makepkg -si
 cd ~
 #yay------------------------------------------------------
 
-sudo pacman -S -q zsh firefox vim discord htop neofetch lolcat steam flatpak yakuake vlc lsd
+sudo pacman -S -q zsh firefox vim discord htop neofetch lolcat steam flatpak yakuake vlc lsd figlet
 
-sudo pacman -R -q kate
-
-yay -Syu vscodium-bin
+yay -Syu visual-studio-code-bin
  
 sudo flatpak install spotify
 
