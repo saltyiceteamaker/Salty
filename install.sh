@@ -1,7 +1,5 @@
 #!/bin/bash
 
-USER=$( whoami )
-
 cd ~
 
 pacman -Syy
