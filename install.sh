@@ -20,7 +20,7 @@ cd ~
 yay -Syy
 #yay------------------------------------------------------
 
-sudo pacman -S -q zsh firefox vim nvim discord btop neofetch lolcat steam flatpak yakuake vlc lsd figlet wget
+sudo pacman -S -q zsh firefox vim nvim discord btop neofetch lolcat steam yakuake vlc lsd figlet wget
 
 #fonts----------------------------------------------------
 cd ~/Downloads 
@@ -31,8 +31,6 @@ cd ~
 
 yay -S visual-studio-code-bin
  
-sudo flatpak install spotify
-
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 sudo chsh /usr/bin/zsh
