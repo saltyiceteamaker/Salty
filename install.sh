@@ -1,7 +1,7 @@
 #!/bin/bash
 if [ $USER == root ]
 then
-echo "please do not run as root, this will probably cause problems. | as of now if you want to run as root please remove the if statement"
+echo "!!WARNING!! you are executing as root, this will probably cause problems. | as of now if you still want to execute as root please remove the if statement by editing the script"
 else
 
 cd ~
@@ -18,7 +18,7 @@ cd ~
 yay -Syy
 #yay------------------------------------------------------
 
-sudo pacman -S -q zsh firefox vim nvim discord htop neofetch lolcat steam flatpak yakuake vlc lsd figlet wget
+sudo pacman -S -q zsh firefox vim nvim discord btop neofetch lolcat steam flatpak yakuake vlc lsd figlet wget
 
 #fonts----------------------------------------------------
 cd ~/Downloads 
@@ -38,5 +38,5 @@ sudo chsh /usr/bin/zsh
 sudo cp /home/$USER/Salty/.zshrc /home/$USER
 sudo cp /home/$USER/Salty/salty.zsh-theme /home/$USER/.oh-my-zsh/themes
 sudo cp /home/$USER/Salty/yakuakerc /home/$USER/.config
-
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 fi
