@@ -1,4 +1,8 @@
 #!/bin/bash
+if [ $USER == root ]
+then
+echo "please do not run as root, this will probably cause problems. | as of now if you want to run as root please remove the if statement"
+else
 
 cd ~
 
@@ -35,3 +39,4 @@ sudo cp /home/$USER/Salty/.zshrc /home/$USER
 sudo cp /home/$USER/Salty/salty.zsh-theme /home/$USER/.oh-my-zsh/themes
 sudo cp /home/$USER/Salty/yakuakerc /home/$USER/.config
 
+fi
