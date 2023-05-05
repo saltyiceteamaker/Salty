@@ -1,7 +1,9 @@
 #!/bin/bash
 if [ $USER == root ]
 then
-echo "!!WARNING!! you are executing as root, this will probably cause problems. | as of now if you still want to execute as root please remove the if statement by editing the script"
+echo "WARNING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+echo "you are executing as root, this will probably cause problems. | as of now if you still want to execute as root please remove the if statement by editing the script"
+echo "WARNING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 else
 
 cd ~
