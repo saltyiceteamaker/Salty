@@ -7,7 +7,7 @@ pacman -Syy
 #yay------------------------------------------------------
 sudo pacman -S -q --needed git base-devel
 sudo git clone https://aur.archlinux.org/yay.git
-sudo chown -R $USER:$USER ./yay
+sudo chown -R "${USER:=$(/usr/bin/id -run)}:$USER" ./yay
 cd yay
 makepkg -si
 cd ~
