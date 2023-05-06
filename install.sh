@@ -6,9 +6,9 @@ echo "you are executing as root, this will probably cause problems. | as of now 
 echo "WARNING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 else
 
-cd ~
+sudo pacman -Syy
 
-pacman -Syy
+cd ~
 
 #yay------------------------------------------------------
 sudo pacman -S -q --needed git base-devel
@@ -33,7 +33,7 @@ yay -S visual-studio-code-bin
  
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
-sudo chsh /usr/bin/zsh
+sudo chsh -s /usr/bin/zsh $USER
 
 sudo cp /home/$USER/Salty/.zshrc /home/$USER
 sudo cp /home/$USER/Salty/salty.zsh-theme /home/$USER/.oh-my-zsh/themes
