@@ -20,7 +20,7 @@ cd ~
 yay -Syy -q
 #yay------------------------------------------------------
 
-sudo pacman -S -q firefox vim neovim discord btop neofetch lolcat steam yakuake zsh vlc lsd figlet wget
+sudo pacman -S -q vim neovim discord btop neofetch lolcat yakuake zsh vlc lsd figlet wget
 
 #fonts----------------------------------------------------
 cd ~/Downloads 
