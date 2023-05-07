@@ -1,12 +1,12 @@
 #!/bin/bash
 if [ $USER == root ]
 then
-echo "WARNING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-echo "you are executing as root, this will probably cause problems. | as of now if you still want to execute as root please remove the if statement by editing the script"
-echo "WARNING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+echo "you are executing as root. Aborting"
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 else
 
-sudo pacman -Syy
+sudo pacman -Syy -q
 
 cd ~
 
@@ -17,7 +17,7 @@ sudo chown -R "${USER:=$(/usr/bin/id -run)}:$USER" ./yay
 cd yay
 makepkg -si
 cd ~
-yay -Syy
+yay -Syy -q
 #yay------------------------------------------------------
 
 sudo pacman -S -q zsh firefox vim nvim discord btop neofetch lolcat steam yakuake vlc lsd figlet wget
@@ -29,11 +29,11 @@ sudo mkdir /usr/local/share/fonts && sudo unzip JetBrainsMono.zip /usr/local/sha
 cd ~
 #fonts----------------------------------------------------
 
-yay -S visual-studio-code-bin
+yay -S -q visual-studio-code-bin
  
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
-sudo chsh -s /usr/bin/zsh $USER
+chsh -s /usr/bin/zsh $USER
 
 sudo cp /home/$USER/Salty/.zshrc /home/$USER
 sudo cp /home/$USER/Salty/salty.zsh-theme /home/$USER/.oh-my-zsh/themes
