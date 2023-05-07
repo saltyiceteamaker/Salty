@@ -6,7 +6,7 @@ echo "you are executing as root. Aborting"
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 else
 
-sudo pacman -Syy -q
+sudo pacman -Syu
 
 cd ~
 
@@ -20,7 +20,7 @@ cd ~
 yay -Syy -q
 #yay------------------------------------------------------
 
-sudo pacman -S -q firefox vim nvim discord btop neofetch lolcat steam yakuake zsh vlc lsd figlet wget
+sudo pacman -S firefox vim neovim discord btop neofetch lolcat steam yakuake zsh vlc lsd figlet wget
 
 #fonts----------------------------------------------------
 cd ~/Downloads 
