@@ -38,5 +38,6 @@ chsh -s /usr/bin/zsh $USER
 sudo cp /home/$USER/Salty/.zshrc /home/$USER
 sudo cp /home/$USER/Salty/salty.zsh-theme /home/$USER/.oh-my-zsh/themes
 sudo cp /home/$USER/Salty/yakuakerc /home/$USER/.config
+sudo cp /home/$USER/Salty/pacman.conf /etc/
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 fi
