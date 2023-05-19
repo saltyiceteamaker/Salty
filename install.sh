@@ -24,8 +24,8 @@ sudo pacman -S -q vim neovim discord btop neofetch lolcat yakuake zsh vlc lsd fi
 
 #fonts----------------------------------------------------
 cd ~/Downloads 
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.0/JetBrainsMono.zip
-sudo mkdir /usr/local/share/fonts && sudo unzip JetBrainsMono.zip /usr/local/share/fonts/
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Arimo.zip
+sudo mkdir /usr/local/share/fonts && sudo unzip Arimo.zip /usr/local/share/fonts/
 cd ~
 #fonts----------------------------------------------------
 
