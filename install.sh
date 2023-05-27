@@ -17,7 +17,7 @@ sudo chown -R "${USER:=$(/usr/bin/id -run)}:$USER" ./pikaur
 cd pikaur
 makepkg -si
 cd ~
-yay -Syy -q
+pikaur -Syy -q
 #yay------------------------------------------------------
 
 sudo pacman -S -q vim neovim discord btop neofetch lolcat yakuake zsh vlc lsd figlet wget
