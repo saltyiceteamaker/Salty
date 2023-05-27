@@ -12,24 +12,15 @@ cd ~
 
 #yay------------------------------------------------------
 sudo pacman -S -q --needed git base-devel
-sudo git clone https://aur.archlinux.org/yay.git
-sudo chown -R "${USER:=$(/usr/bin/id -run)}:$USER" ./yay
-cd yay
+sudo git https://aur.archlinux.org/pikaur.git
+sudo chown -R "${USER:=$(/usr/bin/id -run)}:$USER" ./pikaur
+cd pikaur
 makepkg -si
 cd ~
 yay -Syy -q
 #yay------------------------------------------------------
 
 sudo pacman -S -q vim neovim discord btop neofetch lolcat yakuake zsh vlc lsd figlet wget
-
-#fonts----------------------------------------------------
-cd ~/Downloads 
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Arimo.zip
-sudo mkdir /usr/local/share/fonts && sudo unzip Arimo.zip /usr/local/share/fonts/
-cd ~
-#fonts----------------------------------------------------
-
-yay -S -q visual-studio-code-bin
  
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
