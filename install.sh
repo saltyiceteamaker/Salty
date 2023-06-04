@@ -17,18 +17,19 @@ sudo chown -R "${USER:=$(/usr/bin/id -run)}:$USER" ./pikaur
 cd pikaur
 makepkg -si
 cd ~
-yay -Syy -q
+pikaur -Syy -q
 #yay------------------------------------------------------
 
-sudo pacman -S -q vim neovim discord btop neofetch lolcat yakuake zsh vlc lsd figlet wget
- 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+sudo pacman -S -q vim neovim discord htop btop neofetch lolcat zsh vlc lsd figlet wget blender steam gimp libreoffice-fresh krita
 
-chsh -s /usr/bin/zsh $USER
+pikaur -S protonvpn
+
+chsh -s /bin/zsh $USER
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 sudo cp /home/$USER/Salty/.zshrc /home/$USER
 sudo cp /home/$USER/Salty/salty.zsh-theme /home/$USER/.oh-my-zsh/themes
-sudo cp /home/$USER/Salty/yakuakerc /home/$USER/.config
 sudo cp /home/$USER/Salty/pacman.conf /etc/
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 fi
