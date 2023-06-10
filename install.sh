@@ -12,7 +12,7 @@ cd ~
 
 #yay------------------------------------------------------
 sudo pacman -S -q --needed git base-devel
-sudo git https://aur.archlinux.org/pikaur.git
+sudo git clone https://aur.archlinux.org/pikaur.git
 sudo chown -R "${USER:=$(/usr/bin/id -run)}:$USER" ./pikaur
 cd pikaur
 makepkg -si
