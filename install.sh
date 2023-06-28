@@ -31,5 +31,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 sudo cp /home/$USER/Salty/.zshrc /home/$USER
 sudo cp /home/$USER/Salty/salty.zsh-theme /home/$USER/.oh-my-zsh/themes
 sudo cp /home/$USER/Salty/pacman.conf /etc/
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+sudo git clone https://www.github.com/saltyiceteamaker/unixporn
+sudo chmod ~/unixporn/install.sh
+cd ~/unixporn
+./install.sh
 fi
