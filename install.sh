@@ -2,25 +2,26 @@
 if [ $USER == root ]
 then
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-echo "you are executing as root. Aborting"
+echo "executing as root. Aborting"
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 else
+sudo cp /home/$USER/Salty/pacman.conf /etc/
 
 sudo pacman -Syu -q
 
 cd ~
 
-#yay------------------------------------------------------
+#pikaur------------------------------------------------------
 sudo pacman -S -q --needed git base-devel
-sudo git https://aur.archlinux.org/pikaur.git
+sudo git clone https://aur.archlinux.org/pikaur.git
 sudo chown -R "${USER:=$(/usr/bin/id -run)}:$USER" ./pikaur
 cd pikaur
 makepkg -si
 cd ~
 pikaur -Syy -q
-#yay------------------------------------------------------
+#pikaur------------------------------------------------------
 
-sudo pacman -S -q vim neovim discord htop btop neofetch lolcat zsh vlc lsd figlet wget blender steam gimp libreoffice-fresh krita
+sudo pacman -S -q vim neovim discord htop btop neofetch lolcat zsh vlc lsd figlet wget blender steam gimp libreoffice-fresh krita firefox
 
 pikaur -S protonvpn
 
@@ -30,9 +31,5 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 sudo cp /home/$USER/Salty/.zshrc /home/$USER
 sudo cp /home/$USER/Salty/salty.zsh-theme /home/$USER/.oh-my-zsh/themes
-sudo cp /home/$USER/Salty/pacman.conf /etc/
-sudo git clone https://www.github.com/saltyiceteamaker/unixporn
-sudo chmod ~/unixporn/install.sh
-cd ~/unixporn
-./install.sh
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 fi
